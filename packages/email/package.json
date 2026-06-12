@@ -1,0 +1,26 @@
+{
+  "name": "@jiwen/email",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./emails/*": "./src/emails/*.tsx"
+  },
+  "scripts": {
+    "dev": "portless",
+    "dev:app": "email dev --dir ./src/emails"
+  },
+  "dependencies": {
+    "@react-email/tailwind": "catalog:"
+  },
+  "devDependencies": {
+    "@react-email/ui": "catalog:",
+    "@types/react": "catalog:",
+    "react-email": "catalog:",
+    "tsconfig": "workspace:*"
+  },
+  "portless": {
+    "name": "email.jiwen",
+    "script": "dev:app"
+  }
+}

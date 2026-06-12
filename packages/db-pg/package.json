@@ -1,0 +1,21 @@
+{
+  "name": "@jiwen/db-pg",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "./hyperdrive": "./src/hyperdrive.ts",
+    "./pool": "./src/pool.ts"
+  },
+  "author": "Jiwen",
+  "license": "ISC",
+  "description": "Node Postgres driver for @jiwen/db",
+  "dependencies": {
+    "@jiwen/db": "workspace:*",
+    "drizzle-orm": "catalog:",
+    "pg": "catalog:"
+  },
+  "devDependencies": {
+    "@types/pg": "catalog:",
+    "tsconfig": "workspace:*"
+  }
+}

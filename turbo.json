@@ -1,0 +1,53 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "ui": "tui",
+  "globalPassThroughEnv": ["NODE_ENV", "PROD"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "dist/**",
+        ".nitro/**",
+        ".output/**",
+        ".tanstack/**"
+      ],
+      "env": [
+        "VITE_*",
+        "NODE_ENV",
+        "REDIS_URL",
+        "JWT_SECRET",
+        "BETTER_AUTH_SECRET",
+        "BASE_URL",
+        "DATABASE_URL",
+        "DATABASE_PRIMARY_URL",
+        "DATABASE_REPLICA_1_URL",
+        "DATABASE_REPLICA_2_URL",
+        "SMTP_HOST",
+        "SMTP_PORT",
+        "SMTP_USER",
+        "SMTP_PASSWORD",
+        "EMAIL_FROM",
+        "OSS_BUCKET",
+        "OSS_ACCESS_KEY_ID",
+        "OSS_ACCESS_KEY_SECRET",
+        "OSS_REGION",
+        "OSS_ENDPOINT",
+        "STORAGE_BASE_URL"
+      ]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  },
+  "cacheMaxAge": "7d"
+}

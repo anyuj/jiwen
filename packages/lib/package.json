@@ -1,0 +1,17 @@
+{
+  "name": "@jiwen/lib",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./constants": "./src/constants/index.ts",
+    "./crypto": "./src/crypto/index.ts",
+    "./helpers": "./src/helpers/index.ts",
+    "./types": "./src/types/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsconfig": "workspace:*"
+  }
+}

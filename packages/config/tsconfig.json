@@ -1,0 +1,11 @@
+{
+  "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "paths": {
+      "@jiwen/config": ["./src/index.ts"],
+      "@jiwen/config/*": ["./src/*.ts"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

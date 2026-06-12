@@ -1,0 +1,25 @@
+{
+  "name": "@jiwen/config",
+  "version": "0.0.1",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./i18n": "./src/i18n.ts"
+  },
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "biome format --write",
+    "lint": "biome check"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

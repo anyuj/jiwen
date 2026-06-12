@@ -1,0 +1,54 @@
+# Dependencies
+**/node_modules
+
+# Build outputs
+**/.next
+**/dist
+**/build
+**/.output
+**/.turbo
+**/.nitro
+**/.tanstack
+**/.vinxi
+**/out
+
+# Env files
+**/.env
+**/.env.*
+
+# Git
+.git
+.gitignore
+
+# Test
+**/test-results
+**/.playwright-report
+**/.playwright/.cache/
+**/coverage
+**/.coverage
+
+# packages/db dev tooling (migrations, scripts, sqlc run separately)
+packages/db/migrations
+packages/db/scripts
+packages/db/sqlc
+
+# IDE / misc
+.agents
+.cursor
+.vscode
+.claude
+.idea
+.DS_Store
+*.log
+**/biome.json
+**/components.json
+
+Dockerfile*
+docker-compose*
+.dockerignore
+
+**/README.md
+**/LICENSE
+**/Makefile
+helm-charts
+.editorconfig

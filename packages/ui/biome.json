@@ -1,0 +1,31 @@
+{
+  "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
+  "root": false,
+  "extends": "//",
+  "linter": {
+    "rules": {
+      "a11y": {
+        "useFocusableInteractive": "off",
+        "useSemanticElements": "off",
+        "useAriaPropsForRole": "off",
+        "noRedundantRoles": "off",
+        "noStaticElementInteractions": "off",
+        "noLabelWithoutControl": "off"
+      },
+      "correctness": { "useExhaustiveDependencies": "off" },
+      "security": {
+        "noDangerouslySetInnerHtml": "info"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "info"
+      }
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  }
+}

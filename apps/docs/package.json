@@ -1,0 +1,44 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "portless",
+    "dev:app": "next dev",
+    "start": "next start",
+    "types:check": "fumadocs-mdx && next typegen && tsc --noEmit",
+    "postinstall": "fumadocs-mdx",
+    "lint": "biome check",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "@orama/stopwords": "3.1.18",
+    "@orama/tokenizers": "3.1.18",
+    "@jiwen/config": "workspace:*",
+    "@jiwen/lib": "workspace:*",
+    "@wrksz/themes": "catalog:",
+    "fumadocs-core": "16.10.2",
+    "fumadocs-mdx": "15.0.12",
+    "fumadocs-ui": "npm:@fumadocs/base-ui@16.10.2",
+    "lucide-react": "1.18.0",
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "catalog:",
+    "@types/mdx": "2.0.14",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "babel-plugin-react-compiler": "catalog:",
+    "postcss": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  },
+  "portless": {
+    "name": "docs.jiwen",
+    "script": "dev:app"
+  }
+}

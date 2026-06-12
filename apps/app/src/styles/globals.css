@@ -1,0 +1,19 @@
+/* Keep source() path to ensure consistent CSS asset hashing between client and server builds. */
+/* https://github.com/TanStack/router/pull/6459 */
+@import "tailwindcss" source("../");
+@import "@jiwen/ui/globals.css";
+@import "@fontsource-variable/geist";
+
+@theme inline {
+  --font-sans: "Geist Variable", sans-serif;
+}
+
+@layer base {
+  :root {
+    --header-height: 44px;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}

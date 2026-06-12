@@ -1,0 +1,20 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "apps/app/Dockerfile",
+    "watchPatterns": [
+      "/apps/app/**",
+      "/packages/**",
+      "/bun.lock",
+      "/turbo.json"
+    ]
+  },
+  "deploy": {
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 60,
+    "restartPolicyType": "ON_FAILURE",
+    "overlapSeconds": 30,
+    "drainingSeconds": 30
+  }
+}

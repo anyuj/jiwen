@@ -1,0 +1,52 @@
+{
+  "name": "@jiwen/ui",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format": "biome format --write .",
+    "lint": "biome check ."
+  },
+  "exports": {
+    "./*": [
+      "./src/*.tsx",
+      "./src/*.ts"
+    ],
+    "./globals.css": "./src/styles/globals.css",
+    "./postcss.config": "./postcss.config.mjs",
+    "./lib/*": "./src/lib/*.ts",
+    "./components/*": "./src/components/*.tsx",
+    "./hooks/*": "./src/hooks/*.ts",
+    "./icons": "./src/icons/index.ts"
+  },
+  "dependencies": {
+    "@base-ui/react": "1.5.0",
+    "@daypicker/react": "10.0.1",
+    "@tabler/icons-react": "catalog:",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "cmdk": "1.1.1",
+    "embla-carousel-react": "8.6.0",
+    "input-otp": "1.4.2",
+    "motion": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-resizable-panels": "4.11.2",
+    "react-use-measure": "2.1.7",
+    "recharts": "catalog:",
+    "sonner": "catalog:",
+    "tailwind-merge": "3.6.0",
+    "vaul": "1.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "postcss": "catalog:",
+    "shadcn": "catalog:",
+    "tailwindcss": "catalog:",
+    "tsconfig": "workspace:*",
+    "tw-animate-css": "catalog:"
+  }
+}

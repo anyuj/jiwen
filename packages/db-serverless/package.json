@@ -1,0 +1,19 @@
+{
+  "name": "@jiwen/db-serverless",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "author": "Jiwen",
+  "license": "ISC",
+  "description": "Serverless driver for @jiwen/db",
+  "dependencies": {
+    "@neondatabase/serverless": "catalog:",
+    "@jiwen/db": "workspace:*",
+    "drizzle-orm": "catalog:"
+  },
+  "devDependencies": {
+    "tsconfig": "workspace:*"
+  }
+}

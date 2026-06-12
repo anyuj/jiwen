@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-vega",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "tabler",
+  "aliases": {
+    "components": "@jiwen/ui/components",
+    "utils": "@jiwen/ui/lib/utils",
+    "hooks": "@jiwen/ui/hooks",
+    "lib": "@jiwen/ui/lib",
+    "ui": "@jiwen/ui/components"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle"
+}

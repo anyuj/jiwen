@@ -1,0 +1,15 @@
+{
+  "extends": "tsconfig/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "paths": {
+      "@jiwen/ui": ["./src/"],
+      "@jiwen/ui/*": ["./src/*"]
+    },
+    "moduleResolution": "bundler",
+    "types": ["node"]
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}
